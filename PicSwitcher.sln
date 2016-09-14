@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PicSwitcher", "PicSwitcher\PicSwitcher.csproj", "{C6895C70-7617-4C1F-97E4-C635BA0A7340}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C6895C70-7617-4C1F-97E4-C635BA0A7340}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6895C70-7617-4C1F-97E4-C635BA0A7340}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6895C70-7617-4C1F-97E4-C635BA0A7340}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6895C70-7617-4C1F-97E4-C635BA0A7340}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
