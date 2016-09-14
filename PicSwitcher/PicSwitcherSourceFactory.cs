@@ -8,7 +8,7 @@ namespace PicSwitcher
 {
     class PicSwitcherSourceFactory : AbstractImageSourceFactory
     {
-        public PicSwitcherSourceFactory() //构造函数
+        public PicSwitcherSourceFactory() 
         {
             ClassName = "PicSwitcher";
             DisplayName = ".NET picture switcher";

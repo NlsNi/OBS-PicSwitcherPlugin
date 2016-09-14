@@ -8,7 +8,7 @@ namespace PicSwitcher
 {
     public class PicSwitcherPlugin : AbstractPlugin
     {
-        public PicSwitcherPlugin() //构造函数
+        public PicSwitcherPlugin() 
         {
             Name = ".NET picture switch Plugin";
             Description = "A Plugin lets you show a picture and change picture as you wish.";

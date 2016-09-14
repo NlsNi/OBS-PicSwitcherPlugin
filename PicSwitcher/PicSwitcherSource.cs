@@ -15,7 +15,7 @@ namespace PicSwitcher
         private Texture texture = null;
         private XElement config;
 
-        public PicSwitcherSource(XElement configData)//构造函数
+        public PicSwitcherSource(XElement configData)
         {
             this.config = configData;
             loadDefaultImage();
@@ -36,9 +36,7 @@ namespace PicSwitcher
             string imageDefault = config.GetString("file");
             if (File.Exists(imageDefault))
             {
-                //LoadImage(new Uri(imageDefault));
                 UpdateSettings();
-
             }
         }
         private void OnChanged(object sender, FileSystemEventArgs e)
@@ -55,7 +53,6 @@ namespace PicSwitcher
             string img = config.GetString("file");
             if (File.Exists(img))
             {
-                //LoadImage(new Uri(img));
                 UpdateSettings();
             }
             else
@@ -71,14 +68,7 @@ namespace PicSwitcher
         private void OnDeleted(object sender, FileSystemEventArgs e)
         {
             
-        }
-        private void LoadImage(Uri imageUri)
-        {
-            BitmapImage src = new BitmapImage();
-            src.BeginInit();
-            src.UriSource = imageUri;
-            src.EndInit();
-        }
+        }   
         #region 载入材质相关代码，无须修改
         private void LoadTexture(String imageFile)
         {
