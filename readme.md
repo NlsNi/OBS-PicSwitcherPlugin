@@ -26,7 +26,7 @@
 
    ​
 
-**Part Ⅱ 编写代码 **
+**Part Ⅱ 编写代码**
 
 **PicSwitcherPlugin.cs**
 
