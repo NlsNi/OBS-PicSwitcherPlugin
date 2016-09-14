@@ -20,7 +20,7 @@ namespace PicSwitcher
             this.config = configData;
             loadDefaultImage();
             FileSystemWatcher watcher = new FileSystemWatcher();    //文件监视
-            watcher.Path = @"D:\tmp";    //待监视的路径
+            watcher.Path = @"C:\Program Files (x86)\OBS\plugins\CLRHostPlugin";    //待监视的路径
             watcher.IncludeSubdirectories = true;   //包含子文件夹
             watcher.EnableRaisingEvents = true;
             watcher.Filter = "*.txt";
@@ -31,12 +31,12 @@ namespace PicSwitcher
         }
         private void loadDefaultImage()
         {
-            string picpath = @"D:\图片\2013-01-21\001.JPG";//设置默认图片的路径
+            string picpath = @"C:\Program Files (x86)\OBS\plugins\CLRHostPlugin\default.JPG";//设置默认图片的路径
             this.config.SetString("file", picpath);
             string imageDefault = config.GetString("file");
             if (File.Exists(imageDefault))
             {
-                LoadImage(new Uri(imageDefault));
+                //LoadImage(new Uri(imageDefault));
                 UpdateSettings();
 
             }
@@ -55,7 +55,7 @@ namespace PicSwitcher
             string img = config.GetString("file");
             if (File.Exists(img))
             {
-                LoadImage(new Uri(img));
+                //LoadImage(new Uri(img));
                 UpdateSettings();
             }
             else

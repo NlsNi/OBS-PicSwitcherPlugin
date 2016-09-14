@@ -10,14 +10,13 @@ namespace PicSwitcher
     {
         public PicSwitcherPlugin() //构造函数
         {
-            Name = "Sample Image Plugin";
+            Name = ".NET picture switch Plugin";
             Description = "A Plugin lets you show a picture and change picture as you wish.";
         }
 
         public override bool LoadPlugin()
         {
             API.Instance.AddImageSourceFactory(new PicSwitcherSourceFactory());
-            //API.Instance.AddSettingsPane(new SampleSettingsPane());
             return true;
         }
     }
