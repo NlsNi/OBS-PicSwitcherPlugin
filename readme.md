@@ -2,7 +2,7 @@
 
 完整代码详见Github [仓库地址](https://github.com/NlsNi/OBS-PicSwitcherPlugin)
 
-**Part Ⅰ 创建工程**
+## Part Ⅰ 创建工程
 
 1. 首先创建一个C#的项目，项目类型为类库（ClassLibrary）,使用.NET Framework 4.5 ,名称自定，本文以PicSwitcher为例。
 
@@ -24,7 +24,7 @@
 
    这一步的目的在于简化插件的安装，因为OBS的插件是直接将动态链接库放在插件目录下即可,所以编译成功后利用后期生成事件命令行可以将生成的动态链接库文件直接复制到OBS的插件目录。
 
-**Part Ⅱ 编写代码**
+## Part Ⅱ 编写代码
 
 **PicSwitcherPlugin.cs**
 
