@@ -1,3 +1,9 @@
+# 插件功能
+
+插件的动态链接库PicSwitcher.dll,将该插件复制到OBS\plugins\CLRHostPlugin路径下，另外需要在该目录下放一张default.JPG的图片，这是载入的默认图片，然后再该目录下添加一个txt文件，在txt文件中写入一个图片的路径，保存修改后插件会自动检测文件变化，可以在串流（录制）的过程中自动载入并切换图片，如果路径有误会载入默认图片。
+
+# 开发过程简介
+
 **本文所述的OBS 插件编写基于OBS CLRHostPlugin.使用C# 语言写成，IDE为VS2012**
 
 完整代码详见Github [仓库地址](https://github.com/NlsNi/OBS-PicSwitcherPlugin)
